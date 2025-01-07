@@ -1,9 +1,8 @@
 import * as THREE from 'three';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-export function createThreeScene(containerSelector, objPath, mtlPath) {
+export function createThreeScene(containerSelector, objPath) {
   // Target container for the 3D model
   const container = document.querySelector(containerSelector);
 
@@ -46,60 +45,35 @@ export function createThreeScene(containerSelector, objPath, mtlPath) {
   controls.target.set(0, 0, 0);
   controls.update();
 
-  // Load MTL and OBJ
-  const mtlLoader = new MTLLoader();
+  // Load OBJ file
   const objLoader = new OBJLoader();
 
-  if (mtlPath) {
-    mtlLoader.load(mtlPath, (materials) => {
-      materials.preload(); // Prepare the material for OBJLoader
-      objLoader.setMaterials(materials);
-
-      objLoader.load(
-        objPath,
-        (object) => {
-          object.traverse((child) => {
-            if (child.isMesh) {
-              child.geometry.computeVertexNormals();
-            }
+  objLoader.load(
+    objPath,
+    (object) => {
+      object.traverse((child) => {
+        if (child.isMesh) {
+          child.geometry.computeVertexNormals();
+          child.material = new THREE.MeshStandardMaterial({
+            color: 0xaaaaaa,    // Default material color
+            wireframe: false,    // toggle wireframe
+            transparent: true,  // toggle transparency
           });
-
-          object.position.set(0, 0, 0);
-          object.scale.set(1, 1, 1);
-
-          scene.add(object);
-        },
-        (xhr) => {
-          console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}% loaded`);
-        },
-        (error) => {
-          console.error('An error occurred while loading the model:', error);
         }
-      );
-    });
-  } else {
-    objLoader.load(
-      objPath,
-      (object) => {
-        object.traverse((child) => {
-          if (child.isMesh) {
-            child.geometry.computeVertexNormals();
-          }
-        });
+      });
 
-        object.position.set(0, 0, 0);
-        object.scale.set(1, 1, 1);
+      object.position.set(0, 0, 0);
+      object.scale.set(1, 1, 1);
 
-        scene.add(object);
-      },
-      (xhr) => {
-        console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}% loaded`);
-      },
-      (error) => {
-        console.error('An error occurred while loading the model:', error);
-      }
-    );
-  }
+      scene.add(object);
+    },
+    (xhr) => {
+      console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}% loaded`);
+    },
+    (error) => {
+      console.error('An error occurred while loading the model:', error);
+    }
+  );
 
   // Animation loop
   function animate() {

@@ -63,9 +63,10 @@ document.querySelector('#app').innerHTML = `
   </main>
 `;
 
-createThreeScene('#model1', './src/3DModels/project1/cube.obj', './src/3DModels/project1/cube.mtl');
-createThreeScene('#model2', './src/3DModels/project2/tree.obj', './src/3DModels/project2/tree.mtl');
-createThreeScene('#model3', './src/3DModels/project3/cottage.obj', './src/3DModels/project3/cottage.mtl');
+// Create three.js scenes for each project/model
+createThreeScene('#model1', './src/3DModels/project1/cube.obj');
+createThreeScene('#model2', './src/3DModels/project2/tree.obj');
+createThreeScene('#model3', './src/3DModels/project3/cottage.obj');
 
 
 
