@@ -1,0 +1,43 @@
+# cube.mtl
+
+# Front face
+newmtl Front
+Ka 0.1 0.1 0.1       # Ambient color (dark red)
+Kd 1.0 0.0 0.0       # Diffuse color (bright red)
+Ks 1.0 1.0 1.0       # Specular color (white highlights)
+Ns 100.0             # Specular exponent (shininess)
+
+# Back face
+newmtl Back
+Ka 0.1 0.1 0.2       # Ambient color (dark blue)
+Kd 0.0 0.0 1.0       # Diffuse color (bright blue)
+Ks 0.5 0.5 0.5       # Specular color (gray highlights)
+Ns 50.0              # Shininess
+
+# Left face
+newmtl Left
+Ka 0.1 0.2 0.1       # Ambient color (dark green)
+Kd 0.0 1.0 0.0       # Diffuse color (bright green)
+Ks 0.8 0.8 0.8       # Specular color (light gray highlights)
+Ns 75.0              # Shininess
+
+# Right face
+newmtl Right
+Ka 0.2 0.1 0.0       # Ambient color (dark orange)
+Kd 1.0 0.5 0.0       # Diffuse color (orange)
+Ks 0.3 0.3 0.3       # Specular color (subtle highlights)
+Ns 20.0              # Low shininess
+
+# Top face
+newmtl Top
+Ka 0.1 0.1 0.3       # Ambient color (dark purple)
+Kd 0.5 0.0 1.0       # Diffuse color (purple)
+Ks 1.0 1.0 1.0       # Specular color (white highlights)
+Ns 200.0             # Very shiny
+
+# Bottom face
+newmtl Bottom
+Ka 0.2 0.2 0.1       # Ambient color (dark yellow)
+Kd 1.0 1.0 0.0       # Diffuse color (yellow)
+Ks 0.5 0.5 0.5       # Specular color (gray highlights)
+Ns 30.0              # Medium shininess

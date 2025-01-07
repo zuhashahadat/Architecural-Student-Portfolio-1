@@ -1,13 +1,13 @@
 import './style.css';
 import data from './data/data';
-import { cube } from './3DModel/cube';
+import { createThreeScene } from './3DModels/threeScene';
 
 const cubes = [
   './cubeDrawings/cube1.webp',
   './cubeDrawings/cube2.webp',
   './cubeDrawings/cube3.webp',
   './cubeDrawings/cube4.webp',
-]
+];
 
 document.querySelector('#app').innerHTML = `
   <main id="container">
@@ -17,8 +17,11 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section id="projects">
+      // Model 1
       <div id="project-row">
-        <div id="model1"></div>
+        <div class="three-model">
+          <div id="model1"></div>
+        </div>
         <div id="images">
           <div>
             ${cubes.map((cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`).join('')}
@@ -26,8 +29,11 @@ document.querySelector('#app').innerHTML = `
         </div>
       </div>
 
+      // Model 2
       <div id="project-row">
-        <div id="model2"></div>
+        <div class="three-model">
+          <div id="model2"></div>
+        </div>
         <div id="images">
           <div>
             ${cubes.map((cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`).join('')}
@@ -35,8 +41,11 @@ document.querySelector('#app').innerHTML = `
         </div>
       </div>
 
+      // Model 3
       <div id="project-row">
-        <div id="model3"></div>
+        <div class="three-model">
+          <div id="model3"></div>
+        </div>
         <div id="images">
           <div>
             ${cubes.map((cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`).join('')}
@@ -54,6 +63,9 @@ document.querySelector('#app').innerHTML = `
   </main>
 `;
 
-cube('model1');
-cube('model2');
-cube('model3');
+createThreeScene('#model1', './src/3DModels/project1/cube.obj', './src/3DModels/project1/cube.mtl');
+createThreeScene('#model2', './src/3DModels/project2/tree.obj', './src/3DModels/project2/tree.mtl');
+createThreeScene('#model3', './src/3DModels/project3/cottage.obj', './src/3DModels/project3/cottage.mtl');
+
+
+
