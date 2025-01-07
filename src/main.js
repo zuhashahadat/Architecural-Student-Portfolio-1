@@ -1,6 +1,6 @@
 import './style.css';
 import data from './data/data';
-import { createThreeScene } from './3DModels/threeScene';
+import { createThreeScene } from './threeScene';
 
 const cubes = [
   './cubeDrawings/cube1.webp',
@@ -63,10 +63,10 @@ document.querySelector('#app').innerHTML = `
   </main>
 `;
 
-// Create three.js scenes for each project/model
-createThreeScene('#model1', './src/3DModels/project1/cube.obj');
-createThreeScene('#model2', './src/3DModels/project2/tree.obj');
-createThreeScene('#model3', './src/3DModels/project3/cottage.obj');
+// Create three.js scenes for each
+createThreeScene('#model1', '/3DModels/project1/cube.obj');
+createThreeScene('#model2', '/3DModels/project2/tree.obj');
+createThreeScene('#model3', '/3DModels/project3/cottage.obj');
 
 
 
