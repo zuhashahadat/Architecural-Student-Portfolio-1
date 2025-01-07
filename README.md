@@ -51,6 +51,27 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 
 ### 6. Install Project Dependencies (Locally)
 
-1. Clone your forked repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/portfolio-webapp.git
+1. Install all project dependencies using
+```bash
+npm install
+```
+2. Run locally by running
+```bash
+npm run dev
+``` 
+3. Open the browser and navigate to the URL provided by the terminal (usually http://localhost:5173)
+
+4. Update portfolio with personal information and see updates in live server after saving changed files.
+
+### 7. Deploy to Vercel
+1. Push changes to Github
+- git add .
+- git commit -m "Deploy portfolio"
+- git push -u origin main
+
+2. On vercel Dashboard
+- Add new Project
+- Import the repo you just pushed to Github
+- Follow the setup instructions and click Deploy
+
+3. Once deployed, access the portolio through the live URL and You're all set!
