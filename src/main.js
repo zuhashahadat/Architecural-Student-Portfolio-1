@@ -3,10 +3,10 @@ import data from './data/data';
 import { cube } from './3DModel/cube';
 
 const cubes = [
-  './public/cubeDrawings/cube1.webp',
-  './public/cubeDrawings/cube2.webp',
-  './public/cubeDrawings/cube3.webp',
-  './public/cubeDrawings/cube4.webp',
+  './cubeDrawings/cube1.webp',
+  './cubeDrawings/cube2.webp',
+  './cubeDrawings/cube3.webp',
+  './cubeDrawings/cube4.webp',
 ]
 
 document.querySelector('#app').innerHTML = `
