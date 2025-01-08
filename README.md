@@ -1,6 +1,14 @@
 # Portfolio Web App Template 1
 
-This is a personal portfolio web application built using [Vite](https://vitejs.dev/). It showcases my projects, skills, and contact information as a passionate architectural student.
+![alt text](image.png)  
+Link for Template 1: https://github.com/jzmasiv/Architecural-Student-Portfolio-1
+
+![alt text](image-1.png)  
+Link for Template 2: https://github.com/jugsidhu/Architectural-Student-Portfolio-2
+
+This is a personal portfolio web application built using [Vite](https://vitejs.dev/). It showcases one's projects, skills, and contact information as a passionate architectural student.
+
+---
 
 ## How to Deploy This Portfolio
 
@@ -8,21 +16,7 @@ Follow these step-by-step instructions to deploy your portfolio on [Vercel](http
 
 ---
 
-### 1. Create a GitHub Account
-
-If you don’t already have a GitHub account, create one at [github.com](https://github.com/).
-
----
-
-### 2. Fork the Repository
-
-1. Open the repository link:  
-   [https://github.com/your-username/portfolio-webapp](https://github.com/your-username/portfolio-webapp)  
-2. Click the **Fork** button in the top-right corner. This creates a copy of the project under your GitHub account.
-
----
-
-### 3. Download and Install Node.js
+### 1. Download and Install Node.js
 
 1. Go to the [Node.js download page](https://nodejs.org/).
 2. Download the **LTS (Long-Term Support)** version for your operating system (recommended for most users).
@@ -31,7 +25,7 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 
 ---
 
-### 4. Download and Install Visual Studio Code (VS Code)
+### 2. Download and Install Visual Studio Code (VS Code)
 
 1. Go to the [VS Code download page](https://code.visualstudio.com/).
 2. Download the version for your operating system (Windows, macOS, or Linux).
@@ -39,39 +33,90 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 
 ---
 
-### 5. Set Up a Vercel Account
+### 3. Create a GitHub Account
 
-1. Go to [vercel.com](https://vercel.com/) and sign up for a free account.
-2. After signing up, connect your Vercel account to GitHub:
-   - On the Vercel dashboard, click **Add New Project**.
-   - Authorize Vercel to access your GitHub account.
-   - Select the forked portfolio repository from your GitHub repositories.
+If you don’t already have a GitHub account, create one at [github.com](https://github.com/).
 
 ---
 
-### 6. Install Project Dependencies (Locally)
+### 4. Fork and Clone the Repository
 
-1. Install all project dependencies using
-```bash
-npm install
-```
-2. Run locally by running
-```bash
-npm run dev
-``` 
-3. Open the browser and navigate to the URL provided by the terminal (usually http://localhost:5173)
+1. **Fork the Repository:**
 
-4. Update portfolio with personal information and see updates in live server after saving changed files.
+   - Scroll up this page and click the **Fork** button in the top-right corner. This creates a copy of the project under your GitHub account.
+
+2. **Clone the Repository:**
+
+   - Copy the repository URL from your forked repository (click the green "Code" button and copy the HTTPS link).
+   - Open VS Code and open the terminal (use `Ctrl+` `` ` `` on Windows or `Cmd+` `` ` `` on macOS).
+   - Run the following command to clone the repository into a folder:
+     ```bash
+     git init
+     git clone https://github.com/jzmasiv/Architecural-Student-Portfolio-1
+     ```
+
+3. **Open the Cloned Folder in VS Code:**
+   - Use the **File > Open Folder** option in VS Code to open the folder where you cloned the repository.
+
+---
+
+### 5. Set Up a Vercel Account
+
+1. Go to [vercel.com](https://vercel.com/) and sign up for a free account.
+2. After signing up, connect your Vercel account to GitHub
+
+---
+
+### 6. Install Project Dependencies and Running Locally
+
+1. **Install Dependencies:**
+
+   - In the VS Code terminal, navigate to the project folder (if not already there) and run:
+     ```bash
+     npm install
+     ```
+
+2. **Run the Development Server:**
+
+   - Start the local server by running:
+     ```bash
+     npm run dev
+     ```
+   - Open the browser and navigate to the URL provided by the terminal (usually `http://localhost:5173`).
+
+3. **Customize Your Portfolio:**
+   - Edit the project files (data.js) to update them with your personal information.
+   - The browser will automatically update when you save changes and refresh the page.
+
+---
 
 ### 7. Deploy to Vercel
-1. Push changes to Github
-- git add .
-- git commit -m "Deploy portfolio"
-- git push -u origin main
 
-2. On vercel Dashboard
-- Add new Project
-- Import the repo you just pushed to Github
-- Follow the setup instructions and click Deploy
+1. **Push Changes to GitHub:**
 
-3. Once deployed, access the portolio through the live URL and You're all set!
+   - After customizing the portfolio, push the changes to your GitHub repository:
+     ```bash
+     git add .
+     git commit -m "Updated portfolio"
+     git push -u origin main
+     ```
+
+2. **Deploy on Vercel:**
+
+   - On the Vercel dashboard, click **Add New Project**.
+   - Import the repository from GitHub.
+   - Follow the setup instructions and click **Deploy**.
+
+3. **Access Your Portfolio:**
+   - Once deployed, access your live portfolio using the URL provided by Vercel.
+
+---
+
+You're all set! 🎉 Your portfolio is now live and ready to share.
+
+### More Resources (for Portfolio Customization)
+
+- https://www.w3schools.com/w3css/defaulT.asp
+- https://www.w3schools.com/html/
+- https://vite.dev/
+- https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
