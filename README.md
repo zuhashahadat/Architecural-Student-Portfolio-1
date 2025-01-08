@@ -1,12 +1,12 @@
 # Portfolio Web App Template 2
 
-![alt text](image.png)  
+![alt text](/README-Images/image.png)  
 [Website Preview for Template 1](https://architecural-student-portfolio-1.vercel.app/)  
-[Github Link for Template 1](https://github.com/jzmasiv/Architecural-Student-Portfolio-1)  
+[Github Link for Template 1](https://github.com/jzmasiv/Architecural-Student-Portfolio-1)
 
-![alt text](image-1.png)  
+![alt text](/README-Images/image-1.png)  
 [Website Preview for Template 2](https://architectural-student-portfolio-2.vercel.app/)  
-[Github Link for Template 2](https://github.com/jugsidhu/Architectural-Student-Portfolio-2)  
+[Github Link for Template 2](https://github.com/jugsidhu/Architectural-Student-Portfolio-2)
 
 This is a personal portfolio web application built using [Vite](https://vitejs.dev/). It showcases one's projects, skills, and contact information as a passionate architectural student.
 
@@ -21,17 +21,17 @@ Follow these step-by-step instructions to deploy your portfolio on [Vercel](http
 ### 1. Download and Install Node.js
 
 1. Go to the [Node.js download page](https://nodejs.org/).
-2. Download the **LTS (Long-Term Support)** version for your operating system (recommended for most users).   
-   ![alt text](image-2.png)  
+2. Download the **LTS (Long-Term Support)** version for your operating system (recommended for most users).  
+   ![alt text](/README-Images/image-2.png)
 3. Open the node downloader under recent download history in the top right once it has finished downloading.  
-   ![alt text](image-3.png)
-4. Continue clicking through the downloader until you have reached the custom setup section, and make sure add to Path is selected.    
-   ![alt text](image-4.png)
+   ![alt text](/README-Images/image-3.png)
+4. Continue clicking through the downloader until you have reached the custom setup section, and make sure add to Path is selected.  
+   ![alt text](/README-Images/image-4.png)
 5. Continue clicking through the downloaded until you have reached the tool for native moduels section, and make the box is selected.  
-   ![alt text](image-5.png)
+   ![alt text](/README-Images/image-5.png)
 6. Fianlly, after all the previous steps are completed click install and wait for node to finish installing fully
-   ![alt text](image-6.png)
-   
+   ![alt text](/README-Images/image-6.png)
+
 ---
 
 ### 2. Download and Install Visual Studio Code (VS Code)
@@ -63,12 +63,12 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
      git init
      git clone https://github.com/jugsidhu/Architectural-Student-Portfolio-2.git
      ```
-     ![alt text](image-7.png)   
+     ![alt text](/README-Images/image-7.png)
 
 3. **Open the Cloned Folder in VS Code:**
    - Use the **File > Open Folder** option in VS Code to open the folder where you cloned the repository.  
-     ![alt text](image-8.png)
-     ![alt text](image-9.png)   
+     ![alt text](/README-Images/image-8.png)
+     ![alt text](/README-Images/image-9.png)
 
 ---
 
@@ -98,9 +98,10 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 ### 6. Set Up a Vercel Account
 
 1. Go to [vercel.com](https://vercel.com/) and click start deploying.  
-     ![alt text](image-10.png)
+   ![alt text](/README-Images/image-10.png)
 2. Click continue with github and login with your github account  
-     ![alt text](image-11.png)
+   ![alt text](/README-Images/image-11.png)
+
 ---
 
 ### 7. Deploy to Vercel
@@ -117,13 +118,13 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 2. **Deploy on Vercel:**
 
    - Import the repository from GitHub.  
-      ![alt text](image-12.png)  
+      ![alt text](/README-Images/image-12.png)
    - Follow the setup instructions and click **Deploy**.
-      ![alt text](image-13.png)
+     ![alt text](/README-Images/image-13.png)
 
 3. **Access Your Portfolio:**
    - Once deployed, access your live portfolio using the URL provided by Vercel.  
-      ![alt text](image-14.png)
+      ![alt text](/README-Images/image-14.png)
 
 ---
 
@@ -135,4 +136,3 @@ You're all set! 🎉 Your portfolio is now live and ready to share.
 - https://www.w3schools.com/html/
 - https://vite.dev/
 - https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
-
