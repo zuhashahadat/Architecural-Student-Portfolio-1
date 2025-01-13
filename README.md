@@ -1,4 +1,4 @@
-# Portfolio Web App Template 2
+# Portfolio Web App Template 1
 
 ![alt text](/README-Images/image.png)  
 [Website Preview for Template 1](https://architecural-student-portfolio-1.vercel.app/)  
