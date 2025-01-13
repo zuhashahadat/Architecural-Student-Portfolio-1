@@ -75,12 +75,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10em;
 }
 
 #project-row {
   /* Row layout for projects */
   display: flex;
   justify-content: center;
+  padding-top: 5em;
 }
 
 .three-model {
@@ -90,12 +92,14 @@ h1 {
   align-items: center;
 }
 
-#model1, #model2, #model3 {
+#model1,
+#model2,
+#model3 {
   height: 300px;
   width: 300px;
   margin-right: 3em;
   margin-left: 6em;
-  border: 1px solid #ccc
+  border: 1px solid #ccc;
 }
 
 img {
@@ -110,8 +114,27 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
+  height: 8em;
+  margin-bottom: 2em;
+}
+
+#images-row {
+  /* Row layout for images */
+  display: flex;
+  align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+#description {
+  /* Center description content */
+  display: flex;
+  align-items: center;
+  height: 4em;
+  width: 35em;
+  font-weight: 100;
+  margin-left: 2em;
+  margin-top: 3em;
 }
 
 @media screen and (max-width: 768px) {

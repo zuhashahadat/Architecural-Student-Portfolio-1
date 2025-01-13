@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import * as THREE from "three";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 export function createThreeScene(containerSelector, objPath) {
   // Target container for the 3D model
@@ -55,10 +55,10 @@ export function createThreeScene(containerSelector, objPath) {
         if (child.isMesh) {
           child.geometry.computeVertexNormals();
           child.material = new THREE.MeshStandardMaterial({
-            color: 0xaaaaaa,    // Default material color
-            wireframe: false,    // toggle wireframe
-            transparent: false,  // toggle transparency
-            opacity: 0.5,       // change level of transparency
+            color: 0x000000, // Default material color
+            wireframe: true, // toggle wireframe
+            transparent: true, // toggle transparency
+            opacity: 0.5, // change level of transparency
           });
         }
       });
@@ -72,7 +72,7 @@ export function createThreeScene(containerSelector, objPath) {
       console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     (error) => {
-      console.error('An error occurred while loading the model:', error);
+      console.error("An error occurred while loading the model:", error);
     }
   );
 
@@ -85,7 +85,7 @@ export function createThreeScene(containerSelector, objPath) {
   animate();
 
   // Handle window resize
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(container.clientWidth, container.clientHeight);
