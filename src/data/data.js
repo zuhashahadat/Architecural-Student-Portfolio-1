@@ -1,14 +1,12 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    name: "Zuha Shahadat",
+    bio: "Undergraduate Architectural Student at University of Calgary passionate about inclusive design and urban planning.",
     contact: {
-        email: "john.doe@gmail.com",
-        phone: "+12345678910",
+        email: "zuha.shahadat@ucalgary.ca",
+        phone: "825 979 9984",
         linkedin: "https://www.linkedin.com/",
         github: "https://www.github.com/",
     }
 }
-
-export default data;
