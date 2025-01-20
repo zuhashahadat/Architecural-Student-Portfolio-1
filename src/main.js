@@ -3,10 +3,9 @@ import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
 const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+  "./colladge/taggingimages.png",
+  "./colladge/taggingimages2.png",
+  "./colladge/citations.png",
 ];
 
 const trees = [
@@ -14,6 +13,13 @@ const trees = [
   "./treeDrawings/tree2.jpg",
   "./treeDrawings/tree3.jpg",
   "./treeDrawings/tree4.jpg",
+];
+
+const houses = [
+  "./houseDrawings/house1.jpg",
+  "./houseDrawings/house2.jpg",
+  "./houseDrawings/house3.jpg",
+  "./houseDrawings/house4.jpg",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -25,22 +31,29 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      CADAVRE EXQUIS//
         <div class="three-model">
-          <div id="model1"></div>
+          <a href="./colladge/colladgefinal.png" target="new">
+              <img src="./colladge/colladgefinal.png" alt="random image" width="400" height="300" id="model1">
+            </a>
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
+          <a href="./colladge/taggingimages.png" target="new">
+              <img src="./colladge/taggingimages.png" alt="random image" width="400" height="300">
+            </a>
+          <a href="./colladge/taggingimages2.png" target="new">
+              <img src="./colladge/taggingimages2.png" alt="random image" width="400" height="300">
+            </a>
+          <a href="./colladge/citations.png" target="new">
+              <img src="./colladge/citations.png" alt="random image" width="400" height="300">
+            </a>
+             <img src="./colladge/animation.gif"> 
           </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+          <h4 id="description">WORLDS APART// How does climate change disproportionately affect marginalized communities? //MANIFESTO // Design and the built environment serves as a physical manifestation of our societal values and attitudes. As a result, many global biases make their way into design. Something I am passionate about is being able to acknowledge and address the biases that exist within our society and strive to make a more fair and equitable future. Particularly, I am passionate about climate change, particularly as to how marginalized communities experience the worst of the effects of climate change despite not being the main contributors. Within my Cadavre Exquis, I aimed to explore these ideas as well as the fact that inevitably climate change will impact us all, regardless of wealth or social status.</h4>
         </div>
       </div>
-
+${/* Model 2 commented out
       <div id="project-row">
       Model 2
         <div class="three-model">
@@ -58,7 +71,8 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
-
+*/""}
+${/* Model 3 commented out
       <div id="project-row">
       Model 3
         <div class="three-model">
@@ -66,15 +80,16 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${houses
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (house, index) => `<img src="${house}" alt="house${index + 1}" />`
               )
               .join("")}
           </div>
           <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
+        */""}
     </section>
 
     <ul id="footer-items">
@@ -91,6 +106,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//createThreeScene("#model1", "/3DModels/project1/cube.obj");
+//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
