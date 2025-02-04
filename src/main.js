@@ -53,25 +53,45 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">WORLDS APART// How does climate change disproportionately affect marginalized communities? //MANIFESTO // Design and the built environment serves as a physical manifestation of our societal values and attitudes. As a result, many global biases make their way into design. Something I am passionate about is being able to acknowledge and address the biases that exist within our society and strive to make a more fair and equitable future. Particularly, I am passionate about climate change, particularly as to how marginalized communities experience the worst of the effects of climate change despite not being the main contributors. Within my Cadavre Exquis, I aimed to explore these ideas as well as the fact that inevitably climate change will impact us all, regardless of wealth or social status.</h4>
         </div>
       </div>
-${/* Model 2 commented out
+
       <div id="project-row">
-      Model 2
+      INTEROPERABILITY//
         <div class="three-model">
           <div id="model2"></div>
         </div>
-        <div id="images-description">
+         <div id="images-description">
           <div id="images">
-            ${trees
-              .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
-              )
-              .join("")}
+          <a href="./Interoperability/313_Boards_Page_1.png" target="new">
+              <img src="./Interoperability/313_Boards_Page_1.png" alt="random image" width="300" height="300">
+            </a>
+          <a href="./Interoperability/313_Boards_Page_2.png" target="new">
+              <img src="./Interoperability/313_Boards_Page_2.png" alt="random image" width="300" height="300">
+            </a>
+          <a href="./Interoperability/313_Boards_Page_3.png" target="new">
+              <img src="./Interoperability/313_Boards_Page_3.png" alt="random image" width="300" height="300">
+            </a>
+            <a href="./Interoperability/313_Boards_Page_4.png" target="new">
+              <img src="./Interoperability/313_Boards_Page_4.png" alt="random image" width="300" height="300">
+            </a>
           </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
+          <div id="images-description">
+          <div id="images">
+          <a href="./Interoperability/sub_d_front.png" target="new">
+              <img src="./Interoperability/sub_d_front.png" alt="random image" width="400" height="300">
+            </a>
+          <a href="./Interoperability/sub_d_side.png" target="new">
+              <img src="./Interoperability/sub_d_side.png" alt="random image" width="400" height="300">
+            </a>
+          <a href="./Interoperability/paper_model_front.png" target="new">
+              <img src="./Interoperability/paper_model_front.png" alt="random image" width="400" height="300">
+            </a>
+          <a href="./Interoperability/paper_model_side.png" target="new">
+              <img src="./Interoperability/paper_model_side.png" alt="random image" width="400" height="300">
+            </a>
+          </div>
+          <h4 id="description">INTEROPERABILITY AND GEOMETRY// An exploration of interoperability between different 3D modelling softwares. A study and analysis on various types of geometries, undertaken on three unique 3D models, a simple pavillion, a closed geometry, and a character model.</h4>
         </div>
       </div>
-*/""}
 ${/* Model 3 commented out
       <div id="project-row">
       Model 3
@@ -107,5 +127,5 @@ ${/* Model 3 commented out
 
 // Create three.js scenes for each
 //createThreeScene("#model1", "/3DModels/project1/cube.obj");
-//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model2", "/3DModels/project2/combined_models.obj");
 //createThreeScene("#model3", "/3DModels/project3/cottage.obj");

@@ -105,8 +105,8 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 500px;
   margin-right: 1em;
   margin-left: 1em;
   border: 3px solid #538271;
